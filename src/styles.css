@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+}
+
+li {
+    display: inline;
+}
+
+#page-container {
+    max-width: 860px;
+    display: flex;
+    margin: auto;
+    padding: 0 1em;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#page-header {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: auto;
+    padding: 1em 0 .5em 0;
+    border-bottom: 1px solid #000;
+}
+
+#page-header nav {
+    float: right;
+}
+
+#page-header nav li {
+    padding: 0 0 0 0.7em;
+}
+
+#page-header nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+#page-header ul {
+    text-transform: uppercase;
+    font-size: 90%;
+    text-align: center;
+    padding: 1.3em 0px 0px 5px;
+    margin: 0;
+}
+
+#page-header #name {
+    display: block;
+    float: left;
+    margin: 0px;
+    font-size: 2.2em;
+    color: #2b1a1a;
+    margin-bottom: .25em;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+#page-content {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: auto;
+    padding-top: 2em;
+}
