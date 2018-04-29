@@ -3,7 +3,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     display: block;
 }
 
+/*https://material.io/color/#!/?view.left=0&view.right=0&primary.color=424242&primary.text.color=ffffff&secondary.color=FFAB40*/
 
+body {
+    background-color: #424242;
+    color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: lightgray;
+}
 
 ul {
     display: block;
@@ -12,6 +22,15 @@ ul {
 
 li {
     display: inline;
+}
+
+#project {
+    width: 7em;
+    height: 7em;
+    margin: 0.5em;
+    float: left;
+    padding: 0;
+    background-color: darkgray;
 }
 
 #page-container {
@@ -29,36 +48,24 @@ li {
     width: 100%;
     margin: auto;
     padding: 1em 0 .5em 0;
-    border-bottom: 1px solid #000;
-}
-
-#page-header nav {
-    float: right;
-}
-
-#page-header nav li {
-    padding: 0 0 0 0.7em;
-}
-
-#page-header nav li a {
-    text-decoration: none;
-    color: black;
-}
-
-#page-header ul {
-    text-transform: uppercase;
-    font-size: 90%;
-    text-align: center;
-    padding: 1.3em 0px 0px 5px;
-    margin: 0;
 }
 
 #page-header #name {
     display: block;
-    float: left;
+    margin: auto;
+    width: 8em;
+}
+
+#page-header #name_first {
     margin: 0px;
     font-size: 2.2em;
-    color: #2b1a1a;
+    margin-bottom: .25em;
+    border-bottom: 0;
+    text-decoration: none;
+}
+#page-header #name_last {
+    margin: 0px;
+    font-size: 1.4em;
     margin-bottom: .25em;
     border-bottom: 0;
     text-decoration: none;

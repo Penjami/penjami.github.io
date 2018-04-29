@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './Home/home.module';
 import { ProgrammingModule } from './Programming/programming.module';
 import { GamesModule } from './Games/games.module';
-import { ThreeDModule } from './threeD/threeD.module';
+import { ThreeDModule } from './ThreeD/threeD.module';
 
 @NgModule({
   declarations: [

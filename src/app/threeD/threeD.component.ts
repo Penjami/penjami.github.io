@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-modify',
+  selector: 'app-threed',
   template: `
   <div>
     3d

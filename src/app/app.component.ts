@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   template: `
     <div id="page-container">
       <header id="page-header">
-        <a routerLink="/" id="name">Penjami Rantakangas</a>
+        <div id="name">
+          <a routerLink="/" id="name_first">Penjami</a>
+          <a routerLink="/" id="name_last">Rantakangas</a>
+        </div>
+        <!--
         <nav>
           <ul>
             <li><a routerLink="/" routerLinkActive="active">Home</a></li>
@@ -14,7 +18,7 @@ import { Component } from '@angular/core';
             <li><a routerLink="/programming" routerLinkActive="active">Programming</a></li>
             <li><a routerLink="/3d" routerLinkActive="active">3D</a></li>
           </ul>
-        </nav>
+        </nav>-->
       </header>
       <div id="page-content">
         <router-outlet></router-outlet>
