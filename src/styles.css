@@ -24,11 +24,19 @@ li {
     display: inline;
 }
 
-#project {
-    width: 7em;
-    height: 7em;
-    margin: 0.5em;
+#page-content {
+    text-align:center;
+    display: block;
     float: left;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-top: 2em;
+}
+
+#project {
+    display:inline-block;
+    margin: 10px;
     padding: 0;
     background-color: darkgray;
 }
@@ -71,10 +79,3 @@ li {
     text-decoration: none;
 }
 
-#page-content {
-    display: block;
-    float: left;
-    width: 100%;
-    margin: auto;
-    padding-top: 2em;
-}

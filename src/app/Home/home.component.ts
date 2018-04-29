@@ -16,22 +16,14 @@ export class HomeComponent implements OnInit {
   projects: Project[] = [];
 
   constructor() {
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: '../../assets/dungeonVidTest.mp4',
-                         desc: 'A game that I made with unity game engine'});
+    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+                        desc: 'A game that I made with unity game engine'});
+    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+                        desc: 'A game that I made with unity game engine'});
+    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+                        desc: 'A game that I made with unity game engine'});
+    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+                        desc: 'A game that I made with unity game engine'});
   }
 
   ngOnInit(): void {
