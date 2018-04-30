@@ -8,6 +8,7 @@ import { Component, OnInit, ViewChild, Input } from '@angular/core';
       <source src={{src}} type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
+    <img src="assets/tileBackground.png">
   </div>
   `,
   styles: []
