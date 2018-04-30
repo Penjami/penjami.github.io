@@ -18,11 +18,11 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+    this.projects.push({name: 'plaform game', video: true, src: 'assets/platformVid.m4v',
                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+    this.projects.push({name: 'tower defence game', video: true, src: 'assets/villagesVid.m4v',
                         desc: 'A game that I made with unity game engine'});
-    this.projects.push({name: 'dungeon game', video: true, src: 'assets/dungeonVidTest.mp4',
+    this.projects.push({name: 'tornado escape game', video: true, src: 'assets/tornadoVid.m4v',
                         desc: 'A game that I made with unity game engine'});
   }
 

@@ -4,10 +4,11 @@ import { Component, OnInit, ViewChild, Input } from '@angular/core';
   selector: 'app-project',
   template: `
   <div id="project">
-    <video loop id="video1" width="200" #videoPlayer>
+    <video autoplay muted loop id="video1" width="200" height="150" #videoPlayer>
       <source src={{src}} type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
+    <div>{{name}}</div>
     <img src="assets/tileBackground.png">
   </div>
   `,
@@ -20,7 +21,5 @@ export class ProjectTileComponent implements OnInit {
   @Input() src;
   @Input() desc;
 
-  ngOnInit(): void {
-    this.videoplayer.nativeElement.play();
-  }
+  ngOnInit(): void {  }
 }

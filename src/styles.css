@@ -11,16 +11,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-img {
-    position: absolute;
-    width: 220px;
-    height: 180px;
-    top: 0;
-    right: 0;
-}
-
 a {
     color: lightgray;
+}
+
+video {
+    padding-top: 10px;
 }
 
 ul {
@@ -43,11 +39,28 @@ li {
 }
 
 #project {
-    display:inline-block;
+    display: inline-block;
     position: relative;
-    padding: 10px;
+    padding: 0px 5px 0px 5px;
     margin: 0;
     /*background-color: darkgray;*/
+}
+
+#project div {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 210px;
+    margin: 0;
+    z-index: 1;
+}
+
+#project img {
+    position: absolute;
+    width: 220px;
+    height: 180px;
+    top: 0;
+    right: 0;
 }
 
 #page-container {
