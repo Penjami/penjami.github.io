@@ -11,12 +11,12 @@ import { ProjectDialogComponent } from '../Project/project-dialog.component';
   declarations: [
     HomeComponent,
     ProjectTileComponent,
-    ProjectDialogComponent
+    ProjectDialogComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [ProjectTileComponent, ProjectDialogComponent]

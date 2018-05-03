@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import {trigger, state, style, animate, transition } from '@angular/animations';
 import { MatDialog } from '@angular/material';
 import { ProjectDialogComponent } from './project-dialog.component';
@@ -8,7 +8,7 @@ import { Project } from './project';
   selector: 'app-project',
   template: `
   <div id="project" (click)="openDialog()">
-    <video autoplay muted loopid="video1" width="200" height="150" #videoPlayer>
+    <video autoplay muted loop id="video1" width="200" height="150">
       <source src={{curProject.src}} type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
@@ -85,7 +85,6 @@ import { Project } from './project';
   ]
 })
 export class ProjectTileComponent implements OnInit, AfterViewInit {
-  @ViewChild('videoPlayer') videoplayer: any;
   @Input() curProject;
 
   matDialog: MatDialog;
@@ -99,7 +98,7 @@ export class ProjectTileComponent implements OnInit, AfterViewInit {
 
   openDialog() {
     this.matDialog.open(ProjectDialogComponent, {
-      width: '300px',
+      width: '500px',
       data: this.curProject
     });
   }

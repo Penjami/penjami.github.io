@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+  <div id="top">
     <div id="page-container">
       <header id="page-header">
         <div id="name">
@@ -24,6 +25,7 @@ import { Component } from '@angular/core';
         <router-outlet></router-outlet>
       </div>
     </div>
+  </div>
   `,
   styles: []
 })
