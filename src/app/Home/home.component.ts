@@ -5,9 +5,8 @@ import { Project } from '../Project/project';
 @Component({
   selector: 'app-home',
   template: `
-  <div>
-    <app-project *ngFor="let project of projects"
-      [name]="project.name" [video]="project.video" [src]="project.src" [desc]="project.desc"></app-project>
+  <div #myDiv>
+    <app-project *ngFor="let project of projects" [curProject]="project"></app-project>
   </div>
   `,
   styles: []

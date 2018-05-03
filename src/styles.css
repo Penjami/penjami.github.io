@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 /* You can add global styles to this file, and also import other style files */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
@@ -6,9 +8,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 /*https://material.io/color/#!/?view.left=0&view.right=0&primary.color=424242&primary.text.color=ffffff&secondary.color=FFAB40*/
 
 body {
-    background-color: #424242;
+    background-color: linear-gradient(#357edd,#00449e);
     color: lightgray;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -55,9 +57,18 @@ li {
     z-index: 1;
 }
 
+#project #desc {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 210px;
+    margin: 0;
+    z-index: 1;
+}
+
 #project img {
     position: absolute;
-    width: 220px;
+    width: inherit;
     height: 180px;
     top: 0;
     right: 0;
@@ -95,7 +106,7 @@ li {
 }
 #page-header #name_last {
     margin: 0px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-bottom: .25em;
     border-bottom: 0;
     text-decoration: none;

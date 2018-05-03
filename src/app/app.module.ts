@@ -8,6 +8,7 @@ import { HomeModule } from './Home/home.module';
 import { ProgrammingModule } from './Programming/programming.module';
 import { GamesModule } from './Games/games.module';
 import { ThreeDModule } from './ThreeD/threeD.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ThreeDModule } from './ThreeD/threeD.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HomeModule,
     AppRoutingModule,
     ProgrammingModule,
