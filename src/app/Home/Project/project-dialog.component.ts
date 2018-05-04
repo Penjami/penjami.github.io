@@ -25,7 +25,7 @@ export class ProjectDialogComponent implements OnInit {
     this.videoHTML = this.domSanitizer.bypassSecurityTrustHtml(
       `<a href="${this.project.gameUrl}" >
         <video autoplay muted loop id="video1" width="200" height="150">
-          <source src="${this.project.src}" type="video/mp4">No HTML5 supported.</source>
+          <source src="${this.project.src}" type="video/mp4">No HTML5 supported.
        </video> </a>`
     );
   }

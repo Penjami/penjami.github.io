@@ -9,8 +9,7 @@ import { Project } from './project';
   template: `
   <div id="project" (click)="openDialog()">
     <video autoplay muted loop id="video1" width="200" height="150">
-      <source src={{curProject.src}} type="video/mp4">
-      Your browser does not support HTML5 video.
+      <source src="{{curProject.src}}" type="video/mp4">No HTML5 supported.
     </video>
     <div>{{curProject.name}}</div>
     <img src="assets/tileBackground.png">
