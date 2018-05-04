@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Villages_Webgls.data.unityweb",
+"asmCodeUrl": "Villages_Webgls.asm.code.unityweb",
+"asmMemoryUrl": "Villages_Webgls.asm.memory.unityweb",
+"asmFrameworkUrl": "Villages_Webgls.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

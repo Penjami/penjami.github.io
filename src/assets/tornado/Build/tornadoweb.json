@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "tornadoweb.data.unityweb",
+"asmCodeUrl": "tornadoweb.asm.code.unityweb",
+"asmMemoryUrl": "tornadoweb.asm.memory.unityweb",
+"asmFrameworkUrl": "tornadoweb.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

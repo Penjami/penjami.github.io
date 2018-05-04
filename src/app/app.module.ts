@@ -5,10 +5,8 @@ import { AppComponent } from './app.component';
 import { NotfoundComponent } from './notfound.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './Home/home.module';
-import { ProgrammingModule } from './Programming/programming.module';
-import { GamesModule } from './Games/games.module';
-import { ThreeDModule } from './ThreeD/threeD.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UnityLinkerModule } from 'ng-unity';
 
 @NgModule({
   declarations: [
@@ -17,12 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    UnityLinkerModule,
     BrowserAnimationsModule,
     HomeModule,
-    AppRoutingModule,
-    ProgrammingModule,
-    GamesModule,
-    ThreeDModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
