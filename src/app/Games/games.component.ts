@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectTileComponent } from './Project/project-tile.component';
-import { Project } from './Project/project';
+import { ProjectTileComponent } from './GameProject/project-tile.component';
+import { Project } from './GameProject/project';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-games',
   template: `
-  <div #myDiv>
+  <div id="gameBlock">
     <app-project *ngFor="let project of projects" [curProject]="project"></app-project>
   </div>
   `,
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class GamesComponent implements OnInit {
   projects: Project[] = [];
 
   constructor() {

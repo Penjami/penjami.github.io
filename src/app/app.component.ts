@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-root',
   template: `
@@ -8,12 +7,14 @@ import { Component } from '@angular/core';
     <div id="page-container">
       <header id="page-header">
         <div id="name">
-          <a routerLink="/" id="name_first">Penjami</a>
-          <a routerLink="/" id="name_last">Rantakangas</a>
+          <p id="name_first">Penjami</p>
+          <p id="name_last">Rantakangas</p>
         </div>
       </header>
       <div id="page-content">
-        <router-outlet></router-outlet>
+        <app-games></app-games>
+        <app-programming></app-programming>
+        <app-threed></app-threed>
       </div>
     </div>
   </div>
