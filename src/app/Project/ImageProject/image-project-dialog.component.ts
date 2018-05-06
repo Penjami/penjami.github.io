@@ -1,32 +1,31 @@
 import { Component, OnInit, Input, Inject, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { Project } from './project';
+import { ImageProject } from './image-project';
 
 @Component({
-  selector: 'app-project-dialog',
+  selector: 'app-image-project-dialog',
   template: `
   <h1 mat-dialog-title>{{project.name}}</h1>
   <div mat-dialog-content id="dialog">
     <div id="dialogText"> {{project.desc}} </div>
-    <div [innerHTML]="videoHTML"></div>
+    <div [innerHTML]="imgHTML"></div>
   </div>
   <div mat-dialog-actions><button mat-button [mat-dialog-close]="" cdkFocusInitial>Ok</button></div>
   `,
   styles: []
 })
-export class ProjectDialogComponent implements OnInit {
+export class ImageProjectDialogComponent implements OnInit {
   objectKeys = Object.keys;
-  videoHTML: SafeHtml;
+  imgHTML: SafeHtml;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public project: Project, private domSanitizer: DomSanitizer) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public project: ImageProject, private domSanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
-    this.videoHTML = this.domSanitizer.bypassSecurityTrustHtml(
-      `<a href="${this.project.gameUrl}" >
-        <video autoplay muted loop id="video1" width="200" height="150">
-          <source src="${this.project.src}" type="video/mp4">No HTML5 supported.
-       </video> </a>`
+    this.imgHTML = this.domSanitizer.bypassSecurityTrustHtml(
+      `<a href="${this.project.url}" >
+      <img width="200" height="150" src="{{curProject.src}}">
+      </a>`
     );
   }
 

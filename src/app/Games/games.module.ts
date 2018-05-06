@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProjectTileComponent } from './GameProject/project-tile.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ProjectDialogComponent } from './GameProject/project-dialog.component';
 import { GamesComponent } from './games.component';
+import { ProjectModule } from '../Project/project.module';
 
 @NgModule({
   declarations: [
     GamesComponent,
-    ProjectTileComponent,
-    ProjectDialogComponent,
   ],
   imports: [
     CommonModule,
-    MatDialogModule
+    ProjectModule
   ],
-  exports: [ GamesComponent ],
-  bootstrap: [ProjectTileComponent, ProjectDialogComponent]
+  exports: [ GamesComponent ]
 })
 export class GamesModule { }

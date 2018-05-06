@@ -7,6 +7,7 @@ import { NotfoundComponent } from './notfound.component';
 import { GamesModule } from './Games/games.module';
 import { ProgrammingModule } from './Programming/programming.module';
 import { ThreeDModule } from './ThreeD/threed.module';
+import { ProjectModule } from './Project/project.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ThreeDModule } from './ThreeD/threed.module';
   ],
   imports: [
     BrowserModule,
+    ProjectModule,
     GamesModule,
     ProgrammingModule,
     ThreeDModule,

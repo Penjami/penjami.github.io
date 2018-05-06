@@ -1,22 +1,19 @@
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { ProjectTileComponent } from './threeDProject/project-tile.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ProjectDialogComponent } from './threeDProject/project-dialog.component';
 import { ThreeDComponent } from './threed.component';
+import { ProjectModule } from '../Project/project.module';
 
 @NgModule({
   declarations: [
     ThreeDComponent,
-    ProjectTileComponent,
-    ProjectDialogComponent,
   ],
   imports: [
     CommonModule,
     MatDialogModule,
+    ProjectModule
   ],
-  exports: [ThreeDComponent],
-  bootstrap: [ProjectTileComponent, ProjectDialogComponent]
+  exports: [ThreeDComponent]
 })
 export class ThreeDModule { }

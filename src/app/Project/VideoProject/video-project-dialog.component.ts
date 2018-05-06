@@ -1,10 +1,10 @@
 import { Component, OnInit, Input, Inject, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { Project } from './project';
+import { VideoProject } from './video-project';
 
 @Component({
-  selector: 'app-project-dialog',
+  selector: 'app-video-project-dialog',
   template: `
   <h1 mat-dialog-title>{{project.name}}</h1>
   <div mat-dialog-content id="dialog">
@@ -15,15 +15,15 @@ import { Project } from './project';
   `,
   styles: []
 })
-export class ProjectDialogComponent implements OnInit {
+export class VideoProjectDialogComponent implements OnInit {
   objectKeys = Object.keys;
   videoHTML: SafeHtml;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public project: Project, private domSanitizer: DomSanitizer) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public project: VideoProject, private domSanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     this.videoHTML = this.domSanitizer.bypassSecurityTrustHtml(
-      `<a href="${this.project.gameUrl}" >
+      `<a href="${this.project.url}" >
         <video autoplay muted loop id="video1" width="200" height="150">
           <source src="${this.project.src}" type="video/mp4">No HTML5 supported.
        </video> </a>`

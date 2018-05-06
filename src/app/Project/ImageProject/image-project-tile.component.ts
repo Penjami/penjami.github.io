@@ -1,25 +1,25 @@
 import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatDialog } from '@angular/material';
-import { ProjectDialogComponent } from './project-dialog.component';
-import { Project } from './project';
+import { ImageProjectDialogComponent } from './image-project-dialog.component';
+import { ImageProject } from './image-project';
 
 @Component({
-  selector: 'app-project',
+  selector: 'app-image-project',
   template: `
   <div id="project" (click)="openDialog()">
-    <video autoplay muted loop id="video1" width="200" height="150">
-      <source src="{{curProject.src}}" type="video/mp4">No HTML5 supported.
-    </video>
+    <img width="200" height="150" src="{{curProject.src}}">
     <div>{{curProject.name}}</div>
     <img src="assets/tileBackground.png">
   </div>
   `,
   styles: []
 })
-export class ProjectTileComponent implements OnInit, AfterViewInit {
-  @Input() curProject;
+export class ImageProjectTileComponent implements OnInit, AfterViewInit {
+  @Input() curProject: ImageProject;
 
   matDialog: MatDialog;
+  trigger = 'inactive';
 
   constructor(matDialog: MatDialog) {
     this.matDialog = matDialog;
@@ -28,7 +28,7 @@ export class ProjectTileComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {  }
 
   openDialog() {
-    this.matDialog.open(ProjectDialogComponent, {
+    this.matDialog.open(ImageProjectDialogComponent, {
       width: '500px',
       data: this.curProject
     });
