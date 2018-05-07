@@ -10,6 +10,7 @@ import { ThreeDModule } from './ThreeD/threed.module';
 import { ProjectModule } from './Project/project.module';
 import { ImageProjectDialogComponent } from './Project/ImageProject/image-project-dialog.component';
 import { VideoProjectDialogComponent } from './Project/VideoProject/video-project-dialog.component';
+import { ThreeDProjectDialogComponent } from './Project/ThreeDProject/threed-project-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,10 @@ import { VideoProjectDialogComponent } from './Project/VideoProject/video-projec
     GamesModule,
     ProgrammingModule,
     ThreeDModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ThreeDModule
   ],
   providers: [],
-  bootstrap: [AppComponent, ImageProjectDialogComponent, VideoProjectDialogComponent]
+  bootstrap: [AppComponent, ImageProjectDialogComponent, VideoProjectDialogComponent, ThreeDProjectDialogComponent]
 })
 export class AppModule { }

@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatDialog } from '@angular/material';
-import { ImageProjectDialogComponent } from './image-project-dialog.component';
-import { ImageProject } from './image-project';
+import { ThreeDProjectDialogComponent } from './threed-project-dialog.component';
+import { ThreeDProject } from './threed-project';
 
 @Component({
-  selector: 'app-image-project',
+  selector: 'app-threed-project',
   template: `
   <div id="project" (click)="openDialog()">
     <img id="thumbnail" width="200" height="150" src="{{curProject.src}}">
@@ -15,8 +15,8 @@ import { ImageProject } from './image-project';
   `,
   styles: []
 })
-export class ImageProjectTileComponent implements OnInit, AfterViewInit {
-  @Input() curProject: ImageProject;
+export class ThreeDProjectTileComponent implements OnInit, AfterViewInit {
+  @Input() curProject: ThreeDProject;
 
   matDialog: MatDialog;
   trigger = 'inactive';
@@ -28,7 +28,7 @@ export class ImageProjectTileComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {  }
 
   openDialog() {
-    this.matDialog.open(ImageProjectDialogComponent, {
+    this.matDialog.open(ThreeDProjectDialogComponent, {
       width: '500px',
       data: this.curProject
     });

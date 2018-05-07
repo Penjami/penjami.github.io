@@ -11,7 +11,7 @@ import { VideoProject } from './video-project';
       <source src="{{curProject.src}}" type="video/mp4">No HTML5 supported.
     </video>
     <div>{{curProject.name}}</div>
-    <img src="assets/tileBackground.png">
+    <img id="foreground" src="assets/tileBackground.png">
   </div>
   `,
   styles: []
