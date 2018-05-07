@@ -15,14 +15,7 @@ export class ThreeDComponent implements OnInit {
   projects: ImageProject[] = [];
 
   constructor() {
-    this.projects.push({name: 'dungeon game', src: 'assets/dungeonVidTest.mp4',
-                        desc: 'A game that I made with unity game engine', url: 'assets/pixel3dtest/index.html'});
-    this.projects.push({name: 'plaform game', src: 'assets/platformVid.m4v',
-                        desc: 'A game that I made with unity game engine', url: 'assets/2dplatform/index.html'});
-    this.projects.push({name: 'tower defence game', src: 'assets/villagesVid.m4v',
-                        desc: 'A game that I made with unity game engine', url: 'assets/villages/index.html'});
-    this.projects.push({name: 'tornado escape game', src: 'assets/tornadoVid.m4v',
-                        desc: 'A game that I made with unity game engine', url: 'assets/tornado/index.html'});
+
   }
 
   ngOnInit(): void {

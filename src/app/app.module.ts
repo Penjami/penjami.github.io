@@ -8,6 +8,8 @@ import { GamesModule } from './Games/games.module';
 import { ProgrammingModule } from './Programming/programming.module';
 import { ThreeDModule } from './ThreeD/threed.module';
 import { ProjectModule } from './Project/project.module';
+import { ImageProjectDialogComponent } from './Project/ImageProject/image-project-dialog.component';
+import { VideoProjectDialogComponent } from './Project/VideoProject/video-project-dialog.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,6 @@ import { ProjectModule } from './Project/project.module';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ImageProjectDialogComponent, VideoProjectDialogComponent]
 })
 export class AppModule { }
