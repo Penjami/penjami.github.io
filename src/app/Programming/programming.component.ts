@@ -15,7 +15,7 @@ export class ProgrammingComponent implements OnInit {
 
   constructor() {
     this.projects.push({name: 'Game Engine', src: 'assets/gameEngine.mp4',
-                        desc: `A Game engine/framework that I made using Java, JavaFX and dyn4j physics library
+                        desc: `A game engine/framework that I made using Java, JavaFX and dyn4j physics library
                                     `, url: 'https://github.com/Penjami/Pelimoottori'});
   }
 

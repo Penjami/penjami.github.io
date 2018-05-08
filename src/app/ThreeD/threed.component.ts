@@ -18,15 +18,10 @@ export class ThreeDComponent implements OnInit {
                         desc: `A sword model I made using Blender and Substance Painter
                                     `, url: `
                                     <div class="sketchfab-embed-wrapper">
-                                    <iframe width="320" height="320" src="https://sketchfab.com/models/1580576bc1a94658bd58feb8c744107e/embed?autospin=0&autostart=0&camera=0&ui_infos=0&ui_controls=0&ui_stop=0" 
+                                    <iframe width="320" height="320" 
+                                    src="https://sketchfab.com/models/1580576bc1a94658bd58feb8c744107e/embed?autospin=0&autostart=0&camera=0&ui_infos=0&ui_controls=0&ui_stop=0" 
                                     frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-                                     <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> 
-                                     <a href="https://sketchfab.com/models/1580576bc1a94658bd58feb8c744107e?utm_medium=embed&utm_source=website&utm_campain=share-popup" 
-                                     target="_blank" style="font-weight: bold; color: #1CAAD9;">Sword</a> by 
-                                     <a href="https://sketchfab.com/penjami?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; 
-                                     color: #1CAAD9;">penjami</a> on 
-                                     <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> 
-                                    </p> </div>
+                                    </div>
                                     `});
   }
 
