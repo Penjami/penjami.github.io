@@ -1,0 +1,244 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* You can add global styles to this file, and also import other style files */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*https://material.io/color/#!/?view.left=0&view.right=0&primary.color=424242&primary.text.color=ffffff&secondary.color=FFAB40*/
+
+body {
+  background-color: #424242;
+  color: lightgray;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  background-color: #424242;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#dialog {
+  #dialogHeader {
+    text-align: center;
+  }
+  #dialogContent {
+    float: right;
+  }
+  #dialogText {
+    float: left;
+    width: 40%;
+  }
+  video {
+    float: right;
+  }
+}
+
+a {
+  color: lightgray;
+}
+
+video {
+  padding-top: 12px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+}
+
+li {
+  display: inline;
+}
+
+#page-content {
+  text-align: center;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 2em;
+}
+
+#project {
+  display: inline-block;
+  position: relative;
+  padding: 0px 5px 0px 5px;
+  margin: 0;
+  cursor: pointer;
+  /*background-color: darkgray;*/
+  div {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 210px;
+    margin: 0;
+    z-index: 1;
+  }
+  #desc {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 210px;
+    margin: 0;
+    z-index: 1;
+  }
+  #foreground {
+    position: absolute;
+    width: inherit;
+    height: 180px;
+    top: 0;
+    right: 0;
+  }
+  #thumbnail {
+    padding-top: 20px;
+    width: 200px;
+    height: 150px;
+  }
+}
+
+#page-container {
+  max-width: 860px;
+  display: flex;
+  margin: auto;
+  padding: 0 1em;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#page-header {
+  display: block;
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0 .5em 0;
+  #name {
+    display: block;
+    margin: auto;
+    width: 8em;
+  }
+  #name_first {
+    margin: 0px;
+    font-size: 2.2em;
+    margin-bottom: .25em;
+    border-bottom: 0;
+    text-decoration: none;
+  }
+  #name_last {
+    margin: 0px;
+    font-size: 1.3em;
+    margin-bottom: .25em;
+    border-bottom: 0;
+    text-decoration: none;
+  }
+}
+
+#gameBlock, #programmingBlock, #threeDBlock {
+  margin-top: 20px;
+  border-top: 1px dotted black;
+}
+
+@media only screen and (max-width: 900px) {
+
+  #dialog {
+    video {
+      zoom: 0.8;
+    }
+    #dialogContent {
+      zoom: 0.9;
+    }
+  }
+  
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  #dialog {
+    video {
+      zoom: 0.65;
+    }
+    #dialogContent {
+      zoom: 0.8;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  #project {
+    zoom: 0.8;
+  }
+
+  #dialog {
+    video {
+      zoom: 0.45;
+    }
+    #dialogContent {
+      zoom: 0.6;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+
+  #dialog {
+    video {
+      zoom: 0.4;
+    }
+    #dialogContent {
+      zoom: 0.5;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  #project {
+    zoom: 0.6;
+  }
+
+  #dialog {
+
+    #dialogText {
+      zoom:0.6;
+    }
+    video {
+      zoom: 0.3;
+    }
+    #dialogContent {
+      zoom: 0.4;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  @media only screen and (max-width: 600px) {
+    #project {
+      -o-transform:scale(0.8,0.8); /* Opera */
+      -moz-transform:scale(0.8,0.8); /* Firefox */
+      margin: -20px;
+    }
+    app-video-project {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #project {
+      transform:scale(0.6,0.6); /* Opera */
+      -moz-transform:scale(0.6,0.6); /* Firefox */
+      margin: -40px;
+    }
+    app-video-project {
+      width: 60%;
+    }
+  }
+}

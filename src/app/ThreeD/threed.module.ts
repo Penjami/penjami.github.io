@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ThreeDComponent } from './threed.component';
 import { ProjectModule } from '../Project/project.module';
+import { ThreeDProjectDialogComponent } from '../Project/ThreeDProject/threed-project-dialog.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProjectModule } from '../Project/project.module';
     MatDialogModule,
     ProjectModule
   ],
-  exports: [ThreeDComponent]
+  exports: [ThreeDComponent],
+  bootstrap: [ThreeDProjectDialogComponent]
 })
 export class ThreeDModule { }

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProgrammingComponent } from './programming.component';
 import { ProjectModule } from '../Project/project.module';
+import { VideoProjectDialogComponent } from '../Project/VideoProject/video-project-dialog.component';
 
 @NgModule({
   declarations: [
@@ -14,5 +15,6 @@ import { ProjectModule } from '../Project/project.module';
     ProjectModule
   ],
   exports: [ProgrammingComponent],
+  bootstrap: [VideoProjectDialogComponent]
 })
 export class ProgrammingModule { }

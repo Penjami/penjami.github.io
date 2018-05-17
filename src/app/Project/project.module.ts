@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material';
 import { ImageProjectDialogComponent } from './ImageProject/image-project-dialog.component';
 import { ImageProjectTileComponent } from './ImageProject/image-project-tile.component';
 import { VideoProjectDialogComponent } from './VideoProject/video-project-dialog.component';
@@ -21,6 +22,7 @@ import { ThreeDProjectTileComponent } from './ThreeDProject/threed-project-tile.
   imports: [
     CommonModule,
     MatDialogModule,
+    MatButtonModule
   ],
   exports: [
     ImageProjectDialogComponent,

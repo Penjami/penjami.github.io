@@ -27,6 +27,6 @@ import { ThreeDProjectDialogComponent } from './Project/ThreeDProject/threed-pro
     ThreeDModule
   ],
   providers: [],
-  bootstrap: [AppComponent, ImageProjectDialogComponent, VideoProjectDialogComponent, ThreeDProjectDialogComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -29,7 +29,7 @@ export class VideoProjectTileComponent implements OnInit, AfterViewInit {
 
   openDialog() {
     this.matDialog.open(VideoProjectDialogComponent, {
-      width: '500px',
+      width: '800px',
       data: this.curProject
     });
   }
