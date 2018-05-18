@@ -1,10 +1,9 @@
 import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { VideoProjectDialogComponent } from './video-project-dialog.component';
-import { VideoProject } from './video-project';
+import { ProgrammingProjectDialogComponent } from './programming-project-dialog.component';
 
 @Component({
-  selector: 'app-video-project',
+  selector: 'app-programming-project',
   template: `
   <div id="project" (click)="openDialog()">
     <video muted loop id="video1" width="200" height="150">
@@ -16,7 +15,7 @@ import { VideoProject } from './video-project';
   `,
   styles: []
 })
-export class VideoProjectTileComponent implements OnInit, AfterViewInit {
+export class ProgrammmingProjectTileComponent implements OnInit, AfterViewInit {
   @Input() curProject;
 
   matDialog: MatDialog;
@@ -28,7 +27,7 @@ export class VideoProjectTileComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {  }
 
   openDialog() {
-    this.matDialog.open(VideoProjectDialogComponent, {
+    this.matDialog.open(ProgrammingProjectDialogComponent, {
       width: '800px',
       data: this.curProject
     });

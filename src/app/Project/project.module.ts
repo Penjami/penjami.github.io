@@ -9,6 +9,8 @@ import { VideoProjectDialogComponent } from './VideoProject/video-project-dialog
 import { VideoProjectTileComponent } from './VideoProject/video-project-tile.component';
 import { ThreeDProjectDialogComponent } from './ThreeDProject/threed-project-dialog.component';
 import { ThreeDProjectTileComponent } from './ThreeDProject/threed-project-tile.component';
+import { ProgrammingProjectDialogComponent } from './ProgrammingProject/programming-project-dialog.component';
+import { ProgrammmingProjectTileComponent } from './ProgrammingProject/programming-project-tile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ThreeDProjectTileComponent } from './ThreeDProject/threed-project-tile.
     VideoProjectDialogComponent,
     VideoProjectTileComponent,
     ThreeDProjectDialogComponent,
-    ThreeDProjectTileComponent
+    ThreeDProjectTileComponent,
+    ProgrammingProjectDialogComponent,
+    ProgrammmingProjectTileComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +34,8 @@ import { ThreeDProjectTileComponent } from './ThreeDProject/threed-project-tile.
     VideoProjectDialogComponent,
     VideoProjectTileComponent,
     ThreeDProjectDialogComponent,
-    ThreeDProjectTileComponent]
+    ThreeDProjectTileComponent,
+    ProgrammingProjectDialogComponent,
+    ProgrammmingProjectTileComponent]
 })
 export class ProjectModule { }

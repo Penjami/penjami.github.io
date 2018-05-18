@@ -6,6 +6,7 @@ import { VideoProject } from '../Project/VideoProject/video-project';
   selector: 'app-games',
   template: `
   <div id="gameBlock">
+    <p id="blockHeader">Games</p>
     <app-video-project *ngFor="let project of projects" [curProject]="project"></app-video-project>
   </div>
   `,
@@ -16,7 +17,8 @@ export class GamesComponent implements OnInit {
 
   constructor() {
     this.projects.push({name: 'dungeon game', src: 'assets/dungeonVidTest.mp4',
-                        desc: 'A game that I made with unity game engine', url: 'assets/pixel3dtest/index.html'});
+                        desc: `A game that I made with unity game engine,
+                         The levels of the game are procedurally generated.`, url: 'assets/pixel3dtest/index.html'});
     this.projects.push({name: 'plaform game', src: 'assets/platformVid.m4v',
                         desc: 'A game that I made with unity game engine', url: 'assets/2dplatform/index.html'});
     this.projects.push({name: 'tower defence game', src: 'assets/villagesVid.m4v',

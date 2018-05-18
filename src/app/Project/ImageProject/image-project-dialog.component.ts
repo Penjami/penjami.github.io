@@ -12,7 +12,7 @@ import { ImageProject } from './image-project';
       <div id="dialogText"> {{project.desc}} </div>
       <div [innerHTML]="imgHTML"></div>
     </div>
-    <div mat-dialog-actions><button mat-button [mat-dialog-close]="" cdkFocusInitial>Ok</button></div>
+    <div mat-dialog-actions><button mat-button [mat-dialog-close]="">Ok</button></div>
   </div>
   `,
   styles: []

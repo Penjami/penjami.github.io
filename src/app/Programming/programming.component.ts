@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { VideoProject } from '../Project/VideoProject/video-project';
+import { ProgrammingProject } from '../Project/ProgrammingProject/programming-project';
 
 @Component({
   selector: 'app-programming',
   template: `
   <div id="programmingBlock">
-    <app-video-project *ngFor="let project of projects" [curProject]="project"></app-video-project>
+    <p id="blockHeader">Programming Projects</p>
+    <app-programming-project *ngFor="let project of projects" [curProject]="project"></app-programming-project>
   </div>
   `,
   styles: []
 })
 export class ProgrammingComponent implements OnInit {
-  projects: VideoProject[] = [];
+  projects: ProgrammingProject[] = [];
 
   constructor() {
     this.projects.push({name: 'Game Engine', src: 'assets/gameEngine.mp4',
