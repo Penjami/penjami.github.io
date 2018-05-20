@@ -29,7 +29,8 @@ export class ProgrammmingProjectTileComponent implements OnInit, AfterViewInit {
   openDialog() {
     this.matDialog.open(ProgrammingProjectDialogComponent, {
       width: '800px',
-      data: this.curProject
+      data: this.curProject,
+      autoFocus: false
     });
   }
 

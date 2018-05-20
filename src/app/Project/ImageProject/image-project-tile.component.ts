@@ -30,7 +30,8 @@ export class ImageProjectTileComponent implements OnInit, AfterViewInit {
   openDialog() {
     this.matDialog.open(ImageProjectDialogComponent, {
       width: '500px',
-      data: this.curProject
+      data: this.curProject,
+      autoFocus: false
     });
   }
 

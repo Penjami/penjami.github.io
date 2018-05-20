@@ -19,7 +19,7 @@ export class ThreeDComponent implements OnInit {
                         desc: `A sword model I made using Blender and Substance Painter
                                     `, url: `
                                     <div class="sketchfab-embed-wrapper">
-                                    <iframe width="480" height="480" 
+                                    <iframe width="480" height="480"
                                     src="https://sketchfab.com/models/1580576bc1a94658bd58feb8c744107e/embed?autospin=0&autostart=0&camera=0&ui_infos=0&ui_controls=0&ui_stop=0" 
                                     frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
                                     </div>

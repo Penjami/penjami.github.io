@@ -15,7 +15,7 @@ export class ProgrammingComponent implements OnInit {
   projects: ProgrammingProject[] = [];
 
   constructor() {
-    this.projects.push({name: 'Game Engine', src: 'assets/gameEngine.mp4',
+    this.projects.push({name: 'Java Game Engine', src: 'assets/gameEngine.mp4',
                         desc: `A game engine / framework that I made using Java, JavaFX and dyn4j physics library
                                     `, url: 'https://github.com/Penjami/Pelimoottori'});
   }

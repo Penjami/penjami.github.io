@@ -30,7 +30,8 @@ export class ThreeDProjectTileComponent implements OnInit, AfterViewInit {
   openDialog() {
     this.matDialog.open(ThreeDProjectDialogComponent, {
       width: '800px',
-      data: this.curProject
+      data: this.curProject,
+      autoFocus: false
     });
   }
 
