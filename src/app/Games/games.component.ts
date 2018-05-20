@@ -27,7 +27,7 @@ export class GamesComponent implements OnInit {
                         desc: `A game, where you try to avoid a tornado in an island by running around fast.
                          The game was made with unity game engine`, url: 'assets/tornado/index.html'});
     this.projects.push({name: 'Vapriball', src: 'assets/vapriball.mp4',
-                        desc: `Android topdown gyroscope controlled puzzle/adventure game.
+                        desc: `A topdown gyroscope controlled puzzle/adventure game made for Android.
                         It was a first year school project in TAMK, where I was the primary programmer. It was commisioned by
                         a local museum and it was made using java and libgdx.`,
                         url: 'https://play.google.com/store/apps/details?id=fi.tamk.tiko.contego&hl=en'});

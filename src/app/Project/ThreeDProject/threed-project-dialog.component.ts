@@ -9,8 +9,8 @@ import { ThreeDProject } from './threed-project';
   <div id="dialog">
     <h1 mat-dialog-title id="dialogHeader">{{project.name}}</h1>
     <div mat-dialog-content id="dialog">
+      <div id="dialogContent"  [innerHTML]="modelHTML"></div>
       <div id="dialogText"> {{project.desc}} </div>
-      <div id="dialogContent" [innerHTML]="modelHTML"></div>
     </div>
     <div mat-dialog-actions><button mat-button [mat-dialog-close]="">Ok</button></div>
   </div>

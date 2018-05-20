@@ -29,19 +29,22 @@ body {
   #dialogHeader {
     text-align: center;
   }
-  #dialogContent {
-    float: right;
-  }
   #dialogText {
+    text-align: justify;
+    text-justify: inter-word;
     float: left;
     width: 35%;
   }
-  a {
+  #innerHtmlDiv {
+    float: right;
+    height: 0%;
+  }
+
+  .sketchfab-embed-wrapper {
     float: right;
   }
-  video {
-    float: right;
-    padding-top: 0px;
+  iframe {
+    width: 430px;
   }
 }
 
@@ -158,58 +161,44 @@ li {
 }
 
 @media only screen and (max-width: 900px) {
-
   #dialog {
-    video {
-      zoom: 0.8;
+    #dialogText {
+      text-align: justify;
+      text-justify: inter-word;
+      float: left;
+      width: 100%;
+      
     }
-    #dialogContent {
-      zoom: 0.8;
+    .sketchfab-embed-wrapper {
+      float: none;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #innerHtmlDiv {
+      float: none;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: inherit;
+    }
+    video {
+      width: inherit;
+      height: inherit;
+      padding-top: 0px;
     }
   }
-  
-}
-
-@media only screen and (max-width: 750px) {
-
-  #dialog {
-    video {
-      zoom: 0.65;
-    }
-    #dialogContent {
-      zoom: 0.65;
-    }
-  }
-  
 }
 
 @media only screen and (max-width: 600px) {
   #project {
     zoom: 0.8;
   }
-
-  #dialog {
-    video {
-      zoom: 0.45;
-    }
-    #dialogContent {
-      zoom: 0.45;
+  #dialog { 
+    iframe {
+      height: 300px;
     }
   }
-  
-}
-
-@media only screen and (max-width: 500px) {
-
-  #dialog {
-    video {
-      zoom: 0.4;
-    }
-    #dialogContent {
-      zoom: 0.4;
-    }
-  }
-  
 }
 
 @media only screen and (max-width: 400px) {
@@ -220,12 +209,8 @@ li {
   #dialog {
     #dialogText {
       font-size: 90%;
-    }
-    video {
-      zoom: 0.3;
-    }
-    #dialogContent {
-      zoom: 0.25;
+      float: none;
+      width: 100%;
     }
   }
 }

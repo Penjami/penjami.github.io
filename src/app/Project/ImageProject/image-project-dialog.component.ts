@@ -9,8 +9,8 @@ import { ImageProject } from './image-project';
   <div id="dialog">
     <h1 mat-dialog-title id="dialogHeader">{{project.name}}</h1>
     <div mat-dialog-content>
+      <div id="innerHtmlDiv" [innerHTML]="imgHTML"></div>
       <div id="dialogText"> {{project.desc}} </div>
-      <div [innerHTML]="imgHTML"></div>
     </div>
     <div mat-dialog-actions><button mat-button [mat-dialog-close]="">Ok</button></div>
   </div>
