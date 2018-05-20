@@ -166,8 +166,7 @@ li {
       text-align: justify;
       text-justify: inter-word;
       float: left;
-      width: 100%;
-      
+      width: 100%;  
     }
     .sketchfab-embed-wrapper {
       float: none;
@@ -216,40 +215,6 @@ li {
 }
 
 @-moz-document url-prefix() {
-  @media only screen and (max-width: 900px) {
-
-    #dialog {
-      video {
-        -moz-transform:scale(0.8,0.8); /* Firefox */
-        margin: -30px -40px -30px -40px;
-      }
-      #dialogContent {
-        -moz-transform:scale(0.6,0.6); /* Firefox */
-        margin: -90px -100px -90px -100px;
-      }
-    }
-    
-  }
-  
-  @media only screen and (max-width: 750px) {
-  
-    #dialog {
-      #dialogText {
-        font-size: 90%;
-        /*margin: 0px -30px 0px 0px;*/
-      }
-      video {
-        -moz-transform:scale(0.6,0.6); /* Firefox */
-        margin: -60px -80px -60px -80px;
-      }
-      #dialogContent {
-        -moz-transform:scale(0.6,0.6); /* Firefox */
-        margin: -90px -100px -90px -100px;
-      }
-    }
-    
-  }
-  
   @media only screen and (max-width: 600px) {
     #project {
       -moz-transform:scale(0.8,0.8); /* Firefox */
@@ -258,40 +223,8 @@ li {
     app-video-project {
       width: 80%;
     }
-    #dialog {
-      #dialogText {
-        font-size: 80%;
-        /*margin: 0px -30px 0px 0px;*/
-      }
-      video {
-        -moz-transform:scale(0.5,0.5); /* Firefox */
-        margin: -70px -110px -70px -110px;
-      }
-      #dialogContent {
-        -moz-transform:scale(0.5,0.5); /* Firefox */
-        margin: -120px -140px -120px -140px;
-      }
-    }
   }
 
-  @media only screen and (max-width: 500px) {
-  
-    #dialog {
-      #dialogText {
-        font-size: 65%;
-        /*margin: 0px -30px 0px 0px;*/
-      }
-      video {
-        -moz-transform:scale(0.4,0.4); /* Firefox */
-        margin: -80px -120px -80px -120px;
-      }
-      #dialogContent {
-        -moz-transform:scale(0.4,0.4); /* Firefox */
-        margin: -140px -160px -140px -160px;
-      }
-    }
-    
-  }
   @media only screen and (max-width: 400px) {
     #project {
       -moz-transform:scale(0.6,0.6); /* Firefox */
@@ -299,21 +232,6 @@ li {
     }
     app-video-project {
       width: 60%;
-    }
-
-    #dialog {
-      #dialogText {
-        font-size: 50%;
-        /*margin: 0px -30px 0px 0px;*/
-      }
-      video {
-        -moz-transform:scale(0.3,0.3); /* Firefox */
-        margin: -120px -140px -100px -140px;
-      }
-      #dialogContent {
-        -moz-transform:scale(0.3,0.3); /* Firefox */
-        margin: -160px -180px -160px -180px;
-      }
     }
   }
 }
