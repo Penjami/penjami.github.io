@@ -22,7 +22,7 @@ body {
   background-color: $primary-color;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 #dialog {
@@ -33,13 +33,12 @@ body {
     text-align: justify;
     text-justify: inter-word;
     float: left;
-    width: 35%;
+    width: 38%;
   }
   #innerHtmlDiv {
     float: right;
     height: 0%;
   }
-
   .sketchfab-embed-wrapper {
     float: right;
   }
@@ -62,7 +61,6 @@ li {
   font-size: 1.8em;
   margin-bottom: .25em;
   padding-bottom: .25em;
-  border-bottom: 3px solid $font-color;
   text-decoration: none;
 }
 
@@ -82,11 +80,16 @@ li {
   position: relative;
   padding: 0px 5px 0px 5px;
   margin: 0;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
   /*background-color: darkgray;*/
   video {
     padding-top: 12px;
-  }  
+  }
   div {
     position: absolute;
     top: 120px;
@@ -115,6 +118,13 @@ li {
     width: 200px;
     height: 150px;
   }
+  &:hover {
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 
 #page-container {
@@ -127,6 +137,7 @@ li {
 }
 
 #page-header {
+  background-color: $primary-color;
   display: block;
   float: left;
   width: 100%;
