@@ -1,6 +1,7 @@
 export interface VideoProject {
     name: string;
-    src: string;
+    vidSrc: string;
+    imgSrc: string;
     desc: string;
     url: string;
 }

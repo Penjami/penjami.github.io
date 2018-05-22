@@ -1,6 +1,7 @@
 export interface ProgrammingProject {
     name: string;
-    src: string;
+    vidSrc: string;
+    imgSrc: string;
     desc: string;
     url: string;
 }

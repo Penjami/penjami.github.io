@@ -6,9 +6,7 @@ import { ProgrammingProjectDialogComponent } from './programming-project-dialog.
   selector: 'app-programming-project',
   template: `
   <div id="project" (click)="openDialog()">
-    <video muted loop id="video1" width="200" height="150">
-      <source src="{{curProject.src}}" type="video/mp4">No HTML5 supported.
-    </video>
+    <img src="{{curProject.imgSrc}}" width="200" height="160">
     <div>{{curProject.name}}</div>
     <img id="foreground" src="assets/tileBackground.png">
   </div>
